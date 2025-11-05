@@ -28,8 +28,6 @@ public class ArrayRataNilai12 {
         double rataTidakLulus = (jumlahTidakLulus > 0) ? totalTidakLulus / jumlahTidakLulus : 0;
 
         System.out.println();
-        System.out.println("Jumlah mahasiswa yang lulus (nilai >70): " + jumlahLulus);
-        System.out.println("Jumlah mahasiswa yang tidak lulus (nilai <=70): " + jumlahTidakLulus);
         System.out.println("Rata-rata nilai lulus = " + rataLulus);
         System.out.println("Rata-rata nilai tidak lulus = " + rataTidakLulus);
 
