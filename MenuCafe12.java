@@ -8,12 +8,10 @@ public class MenuCafe12 {
             "Nasi Goreng", "Steak", "Cireng",
             "Kentang Goreng", "Lemon Tea", "Cappucino", "Chocolate Ice"
         };
-
         System.out.println(" Daftar Menu Kafe ");
         for (String item : menu) {
             System.out.println("- " + item);
         }
-
         System.out.print("\nMasukkan nama makanan/minuman yang ingin dicari\n: ");
         String cari = sc.nextLine();
 
