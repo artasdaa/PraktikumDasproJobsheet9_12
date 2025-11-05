@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Pemesanan12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah pesanan: ");
+        int jumlah = sc.nextInt();
+        sc.nextLine(); 
+
+        String[] namaPesanan = new String[jumlah];
+        double[] hargaPesanan = new double[jumlah];
+        double total = 0;
+
+        for (int i = 0; i < jumlah; i++) {
+            System.out.print("Masukkan nama pesanan ke-" + (i + 1) + ": ");
+            namaPesanan[i] = sc.nextLine();
+
+            System.out.print("Masukkan harga pesanan ke-" + (i + 1) + ": Rp ");
+            hargaPesanan[i] = sc.nextDouble();
+            sc.nextLine();
+            total += hargaPesanan[i];
+        }
+
+        System.out.println("\nDaftar Pesanan Anda");
+        for (int i = 0; i < jumlah; i++) {
+            System.out.println((i + 1) + ". " + namaPesanan[i] + " - Rp " + hargaPesanan[i]);
+        }
+
+        System.out.println("Total biaya: Rp " + total);
+
+        sc.close();
+    }
+}
